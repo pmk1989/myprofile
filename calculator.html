@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        input[type="button"]:hover{ 
+            color: rgb(135, 135, 222);
+            background-color:burlywood;
+
+        }
+        input[type="button"]{
+            background-color: #4caf50;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+        input[type="text"]{
+            color: cadetblue;
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+        input[type="number"]{
+            color: cadetblue;
+            width: 100%;
+        }
+        .container{
+            width: 200;
+            height: 200;
+            background-color:yellow;
+            border: 2px solid brown;
+            display: inline-block;
+            position: relative;
+            left: 400px;
+            top: 100px;
+            
+        }
+        label{
+            font-family: 'Poppins', sans-serif;
+            color: cadetblue;
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            color: cadetblue;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <fieldset id="container">
+        <h2>DISCOUNT CALCULATOR</h2>
+        <p><label for="">Enter bill amount and discount in percentage</label></p>
+        <p><label for="">Bill Amount</label></p>
+        <p><input type="text"></p>
+
+<p><label for="">Discount Percentage</label></p>
+<p><input type="number"></p>
+<p>
+<input type="button" value="CALCULATE"></p>
+<p><label for="">Total Discount amount</label></p>
+</fieldset>
+    </div>
+</body>
+</html>
