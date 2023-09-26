@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <style>
+        input[type="button"]:hover{ 
+            color:grey;
+            background-color:aqua;
+
+        }
+        input[type="button"]{
+            background-color:gray;
+            font-family: 'Poppins', sans-serif;
+            width: 50% ;
+            position: relative;
+            left: 140px;
+            top : 20px;
+        }
+        input[type="text"]{
+            background-color: rgb(148, 146, 146);
+            font-family: 'Poppins', sans-serif;
+            width: 100%;
+        }
+        
+
+        .container{
+            width: 200;
+            height: 200;
+            background-color:rgb(228, 224, 224);
+            border:  hidden white;
+            display: inline-block;
+            position: relative;
+            left: 500px;
+            top: 50px;
+            border-radius: 3px;
+            
+        }
+        label{
+            font-family: 'Poppins', sans-serif;
+            
+        }
+        h2{
+            font-family: 'Roboto', sans-serif;
+            color: cadetblue;
+        }
+        #message{
+
+           
+            
+            display: inline-block;
+            background-color:rgb(27, 78, 187);
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+            position: relative;
+            font-size: small;
+            border-radius: 5px;
+            border: 5px solid rgb(27, 78, 187);
+           
+        }
+        .required::after{
+        content: ' *';
+        color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" >
+        <fieldset id="container">
+        <h2>Subscriber</h2>
+        <P id="message"><label for=""> We're sorry to see you go,but hey,no hard 
+           <br> feelings,hopefully we will see you back
+            <br> one day. 
+            <br> please fill in your email address in order to 
+             <br> Unsubscribe from the list. 
+             <br> You will receive an email to confirm your 
+             <br> unsubscription,just to make sure this is 
+             <br> not an accident or somebody else tries to 
+             <br> Unsubscribe you.</label></P>
+        <p><label class="required">Email</label></p>
+        <p><input type="text"></p>
+
+<p><label for="">Unsubscribe reason</label></p>
+<p><input type="text" placeholder="Unsubscribe reason"></p>
+<p>
+<input type="button" value="Unsubscribe"></p>
+
+</fieldset>
+    </div>
+</body>
+</html>
